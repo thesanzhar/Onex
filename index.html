@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="/img/logo-for-siteicon.png">
+  <title>ONEX</title>
+</head>
+<body>
+  <header>
+    <div class="content">
+      <div class="header__container">
+        <div class="header__logo">
+          <a href="#">
+            <img src="img/icons/logo-onex.svg" alt="" class="logo">
+            <img src="img/icons/logo-onex-dark.svg" alt="" class="logo-dark">
+          </a>
+        </div>
+        <div class="header__lang">
+          <div class="dropdown">
+            <button id="description" class="dropbtn" type="button" data-toggle="dropdown" onclick="myFunction()">Русский⠀
+              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L5 5L9 1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>          
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a onclick="toggleLanguage('Русский')" href="#">Русский</a>
+              <a onclick="toggleLanguage('Қазақ')" href="#">Қазақ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="content2">
+      <div class="main__header">
+        <h1>Договор оферты</h1>
+      </div>
+      <form id="info_client" class="document_field">
+        <iframe src="/img/Магия утра.pdf" frameborder="0"></iframe>
+        <label class="checkbox_container">Я согласен с условиями договора 
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        <input type="text" placeholder="ФИО" name="" id="" required>
+        <input type="text" id="regexp-mask" placeholder="ИИН" name="" id="" required>
+        <input type="tel" id="phone_number" placeholder="Телефон" name="" id="" required>
+        <input type="email" placeholder="Адрес" name="" id="" required>
+        <button onclick="location.href='confirm.html'">Отправить</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="content">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <a href="#">
+            <img src="img/icons/logo-onex-dark.svg" alt="" class="logo">
+            <p>&copy 2021 onex.kz</p>
+          </a>
+        </div>
+        <div class="contact_us">
+          <h2 class="contact_us_header">Байланыс</h2>
+          <a href="#" class="contact_us_info">
+            <img src="img/icons/location.svg" alt="">
+            <p>Набережная, 54 д, Алматы</p>
+          </a>
+          <a href="tel:77055797921" class="contact_us_info">
+            <img src="img/icons/call.svg" alt="">
+            <p>+7 705 579 79 21</p>
+          </a>
+        </div>
+        <div class="social">
+          <h2 class="social_header">Әлеуметтік желіде</h2>
+          <div class="social_info">
+            <a href="#"><img src="img/icons/Facebook 1.svg" alt=""></a>
+            <a href="#"><img src="img/icons/Vk.svg" alt=""></a>
+            <a href="#"><img src="img/icons/Whatsup 1.svg" alt=""></a>
+            <a href="#"><img src="img/icons/Telegram.svg" alt=""></a>
+            <a href="#"><img src="img/icons/Twitter, Square 1.png" alt=""></a>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
